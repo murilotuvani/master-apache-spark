@@ -40,7 +40,7 @@ public class Application {
 		df.show(3);
 
 		// Write to destination
-		if (false) {
+//		if (false) {
 			String dbConnectionUrl = "jdbc:mysql://localhost/spark_course_data"; // <<- You need to create this database
 			Properties prop = new Properties();
 			prop.setProperty("driver", "com.mysql.cj.jdbc.Driver");
@@ -48,15 +48,15 @@ public class Application {
 			prop.setProperty("password", "root"); // <- The password you used while installing Postgres
 
 			df.write().mode(SaveMode.Overwrite).jdbc(dbConnectionUrl, "project1", prop);
-		} else {
-			String dbConnectionUrl = "jdbc:postgresql://localhost/spark_course_data"; // <<- You need to create this database
-			Properties prop = new Properties();
-			prop.setProperty("driver", "org.postgresql.Driver");
-			prop.setProperty("user", "postgres");
-			prop.setProperty("password", "postgres"); // <- The password you used while installing Postgres
-
-			df.write().mode(SaveMode.Overwrite).jdbc(dbConnectionUrl, "project1", prop);
-		}
+//		} else {
+//			String dbConnectionUrl = "jdbc:postgresql://localhost/spark_course_data"; // <<- You need to create this database
+//			Properties prop = new Properties();
+//			prop.setProperty("driver", "org.postgresql.Driver");
+//			prop.setProperty("user", "postgres");
+//			prop.setProperty("password", "postgres"); // <- The password you used while installing Postgres
+//
+//			df.write().mode(SaveMode.Overwrite).jdbc(dbConnectionUrl, "project1", prop);
+//		}
 		
 	}
 }
