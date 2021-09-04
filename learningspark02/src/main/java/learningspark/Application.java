@@ -1,8 +1,15 @@
 package learningspark;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.Level;
+
 public class Application {
 
 	public static void main(String args[]) {
+		
+		Logger.getLogger("org").setLevel(Level.ERROR);
+	    Logger.getLogger("akka").setLevel(Level.ERROR);
+	    
 		System.out.println("Olá");
 		
 		InferCSVSchema parser = new InferCSVSchema();
