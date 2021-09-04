@@ -15,3 +15,15 @@ create database spark_course_data;
 
 ## Documentação da imagem do docker
 https://hub.docker.com/r/bitnami/spark
+
+### Para reduzir o logging
+1). Add the following imports to the top of the class that contains your main method.
+
+    import org.apache.log4j.Logger;
+    import org.apache.log4j.Level;
+
+
+2). After that, inside your main method, add the following 2 lines.
+
+    Logger.getLogger("org").setLevel(Level.ERROR);
+    Logger.getLogger("akka").setLevel(Level.ERROR);

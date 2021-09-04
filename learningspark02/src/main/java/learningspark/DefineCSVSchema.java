@@ -14,6 +14,7 @@ public class DefineCSVSchema {
 		SparkSession spark = SparkSession.builder().appName("Complex CSV with a schema to Dataframe").master("local")
 				.getOrCreate();
 
+		// Descreveno os campos do schema.
 		StructType schema = DataTypes.createStructType(new StructField[] { //
 				DataTypes.createStructField("id", //
 						DataTypes.IntegerType, //
