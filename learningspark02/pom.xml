@@ -3,9 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>udemy</groupId>
-	<artifactId>learningspark</artifactId>
-	<version>1.0</version>
-	<name>learningspark</name>
+	<artifactId>learningspark02</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
 
@@ -53,13 +52,8 @@
 			<version>8.0.26</version>
 		</dependency>
 
-<!-- 
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.2.23</version>
-		</dependency>
- -->
+		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
+			<version>42.2.23</version> </dependency> -->
 	</dependencies>
 
 	<build>
@@ -104,5 +98,4 @@
 
 
 	</build>
-
 </project>
