@@ -2,6 +2,7 @@ package learningspark;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.spark.Partition;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -34,7 +35,14 @@ public class Application03 {
 		Dataset<Row> df = philDf.unionByName(durhamDf);
 		df.show(500);
 		df.printSchema();
-		System.out.println("Nós temos "+df.count()+" registros");
+		System.out.println("Nós temos " + df.count() + " registros");
+
+		// Pode-se otimizar muito o processamento utilizando 
+		// mais particoes, normalmente particoes nao tem mais de 128MB
+		df = df.repartition(5);
+		
+		Partition[] partitions = df.rdd().partitions();
+		System.out.println("Numero total de particoes : " + partitions.length);
 	}
 
 	private static Dataset<Row> buildPhilParksDataFrame(SparkSession spark) {
