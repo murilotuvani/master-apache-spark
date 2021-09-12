@@ -24,3 +24,11 @@ reduce() a função reduce é aplicada a todo o conjunto e tem como resultado ap
 | 2 |  -> | 8 |
 | 2 |  -> |  |
  
+
+### MapFunction
+A interface MapFunction serve para transformar um Row em um Pojo e vice versa.
+
+### flatMap()
+flatMap() pega uma entrada e produz diversas saídas.
+Exemplo, ter como a entrada um texto e na saida a contagem de palavras do texto.
+
