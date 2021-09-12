@@ -3,7 +3,7 @@
 Dataset<T> - tem classes java, mas não consegue fazer as operações.<br/>
 Dataset<Row> - Somente Row, mas consegue fazer as operações sobre os registros. 
 
-#Funções
+##Funções - projeto 4
 ### map()
 map() - Entra um elemento e sai um elemento, um map() sobre as letras do alfabeto que transformem eles em seus números ordinais fica:<br/>
 | x | f(x)->y | y |
