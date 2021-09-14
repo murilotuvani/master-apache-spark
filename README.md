@@ -54,4 +54,12 @@ Quando uma ação é enviada então o DAG (Directed Acyclic Graph) faz as açõe
 DAG é um grafo não ciclico direcional, isto é, só tem uma direção.
 
 
+# Acessando o Spark servidor e não a versão embutida
+URL de conexão: spark://master_hostname:port
+
+### Se tiver múltiplos servidores:
+addresses: spark://master1_hostname:port1,master2_hostname:port2
+
+
+
 
