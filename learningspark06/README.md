@@ -1,0 +1,1 @@
+Se quiser pegar mais conteúdo para ser analizado é só acessar http://files.pushshift.io/ no caso do conteudo do exemplo a fonte é http://files.pushshift.io/reddit/comments/

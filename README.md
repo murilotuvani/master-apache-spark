@@ -43,7 +43,11 @@ Exemplo, ter como a entrada um texto e na saida a contagem de palavras do texto.
 O ato de adiconar ou remover, fazer junções são transformações.
 Agrupamentos 
 
-Exibir é uma ação.
+show() Exibir é uma ação.
+collect()
+collectAsList() é ação
+describe() estatísticas, é uma ação
+map() e reduce() são ações.
 
 As transformações não acontecem antes de seja criada uma ação.
 Quando uma ação é enviada então o DAG (Directed Acyclic Graph) faz as ações de maneira procedural.
