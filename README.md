@@ -60,6 +60,8 @@ URL de conexão: spark://master_hostname:port
 ### Se tiver múltiplos servidores:
 addresses: spark://master1_hostname:port1,master2_hostname:port2
 
-
+## Streaming
+Há várias maneiras de ingerir os dados e também de disponibilizar as informações.
+[Guia de programção difusão estruturada _structured streamin_](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
 
 
