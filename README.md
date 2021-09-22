@@ -64,4 +64,11 @@ addresses: spark://master1_hostname:port1,master2_hostname:port2
 Há várias maneiras de ingerir os dados e também de disponibilizar as informações.
 [Guia de programção difusão estruturada _structured streamin_](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
 
+## Machine Learning com Spark
+Um livro recomenado para leitura é [An Introduction to Statistical Learning](https://www.statlearning.com/)
+Regressão linear, uma linha com a distância minima entre os pontos de um gráfico.
+Dá para fazer regressão linear no Excel.
+Tem regressão linar simples é que á relação entre f(x)=y, só tem uma variável.
+
+
 

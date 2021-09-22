@@ -21,6 +21,7 @@ public class StreamingFileDirectoryApplication {
 		        .getOrCreate();
 		
 		// Read all the csv files written atomically in a directory
+		// Aqui estah definindo a estrutura do arquivo
 		StructType userSchema = new StructType().add("date", "string").add("value", "float");
 		
 		Dataset<Row> stockData = spark

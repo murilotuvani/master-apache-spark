@@ -40,7 +40,9 @@ public class StreamingSocketApplication {
 		
 		try {
 			StreamingQuery query = wordCounts.writeStream()
-					.outputMode("append")
+					.outputMode("complete") // <-- Exibe todas as informações
+//					.outputMode("update") // <-- Exibe so os dados alterados
+					//.outputMode("append") // <-- Da erro 
 					.format("console")
 					.start();
 			query.awaitTermination();

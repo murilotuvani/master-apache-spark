@@ -23,9 +23,10 @@ public class StreamingKafkaConsumer {
 		// Kafka Consumer
 		Dataset<Row> messagesDf = spark.readStream()
 		  .format("kafka")
-		  .option("kafka.bootstrap.servers", "localhost:9092")
-		  .option("subscribe", "test")
+		  .option("kafka.bootstrap.servers", "localhost:9092") // Especificando o endereco do servidor 
+		  .option("subscribe", "test") // Topico onde serah feit a inscricao
 		  .load()
+		  // A linha abaixo so esta transformando em String o valor
 		  .selectExpr("CAST(value AS STRING)"); // lines.selectExpr("CAST key AS STRING", "CAST value AS STRING") For key value
 		
 		// message.show() // <-- Can't do this when streaming!
