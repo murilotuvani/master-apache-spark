@@ -66,9 +66,18 @@ Há várias maneiras de ingerir os dados e também de disponibilizar as informa�
 
 ## Machine Learning com Spark
 Um livro recomenado para leitura é [An Introduction to Statistical Learning](https://www.statlearning.com/)
+
+### Regressão Linear - Linear regression
 Regressão linear, uma linha com a distância minima entre os pontos de um gráfico.
 Dá para fazer regressão linear no Excel.
 Tem regressão linar simples é que á relação entre f(x)=y, só tem uma variável.
+
+### Regressão logistica
+É um calculo de classificação, onde várias entradas geram uma saída booleana, o resultado computado pode ser 0,7 então o resultado é 1, caso o resultado computado seja 0,3 então o resultado será 0.
+
+### K-Mean
+Eh um metodo de classificar em um deteminado conjunto de clusteres os itens observados, onde o número de clusteres é K.
+Então se você quer classificar em 3 clusters k=3, se quer 5 clusters então k=5.
 
 
 

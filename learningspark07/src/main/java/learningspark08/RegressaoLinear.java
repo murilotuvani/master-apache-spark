@@ -1,4 +1,4 @@
-package learningspark07;
+package learningspark08;
 
 import org.apache.spark.ml.feature.VectorAssembler;
 import org.apache.spark.ml.regression.LinearRegression;
